@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 90" width="420" height="90">
+  <defs>
+    <linearGradient id="logoOrangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F45A24"/>
+      <stop offset="100%" stop-color="#DB4516"/>
+    </linearGradient>
+    <filter id="logoDropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#193A5A" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <!-- Logo Icon: Open Book / Alfa Badge -->
+  <g transform="translate(12, 12)" filter="url(#logoDropShadow)">
+    <!-- Book Base Card -->
+    <rect x="0" y="0" width="66" height="66" rx="16" fill="#193A5A"/>
+    <!-- Open Book Pages -->
+    <path d="M 15 44 C 24 38 33 42 33 22 C 33 42 42 38 51 44 L 51 49 C 42 43 33 47 33 27 C 33 47 24 43 15 49 Z" fill="#FFFFFF"/>
+    <path d="M 33 24 L 33 48" stroke="#F45A24" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Alfa Star / Pencil Accent -->
+    <circle cx="33" cy="18" r="4" fill="#FFC94A"/>
+    <path d="M 46 16 L 50 12 M 49 20 L 53 18" stroke="#FFC94A" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Brand Typography -->
+  <g transform="translate(92, 14)">
+    <text x="0" y="32" font-family="'Poppins', sans-serif" font-size="24" font-weight="800" fill="#193A5A" letter-spacing="-0.3">
+      BIBLIOTECA
+    </text>
+    <text x="146" y="32" font-family="'Poppins', sans-serif" font-size="24" font-weight="800" fill="#F45A24" letter-spacing="-0.3">
+      ALFA KIDS™
+    </text>
+    
+    <!-- Subtitle Tagline -->
+    <rect x="0" y="42" width="310" height="20" rx="6" fill="#FFF8EC" stroke="#E9DED0" stroke-width="1"/>
+    <text x="155" y="55" font-family="'Inter', sans-serif" font-size="9.5" font-weight="700" fill="#64717D" text-anchor="middle" letter-spacing="0.6">
+      📚 RECURSOS PEDAGÓGICOS E ATIVIDADES PRONTAS
+    </text>
+  </g>
+</svg>
