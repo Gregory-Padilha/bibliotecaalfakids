@@ -334,6 +334,19 @@ function trackEvent(eventName, customData = {}) {
   if (window.dataLayer && Array.isArray(window.dataLayer)) {
     window.dataLayer.push(payload);
   }
+
+  // Meta Pixel Event Tracking
+  if (typeof window.fbq === 'function') {
+    if (eventName === 'complete_plan_clicked' || eventName === 'upgrade_checkout_started' || eventName === 'essential_checkout_started') {
+      window.fbq('track', 'InitiateCheckout', {
+        value: customData.price || 0,
+        currency: 'BRL',
+        content_name: eventName
+      });
+    } else {
+      window.fbq('trackCustom', eventName, customData);
+    }
+  }
 }
 
 function getSessionId() {
